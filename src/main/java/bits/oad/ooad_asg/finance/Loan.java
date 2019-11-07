@@ -3,7 +3,7 @@ package bits.oad.ooad_asg.finance;
 import java.util.List;
 
 import bits.oad.ooad_asg.Util;
-import bits.oad.ooad_asg.scrutiny.ApprovalRequest;
+import bits.oad.ooad_asg.scrutiny.PropertyApprovalRequest;
 import bits.oad.ooad_asg.submission.Customer;
 import bits.oad.ooad_asg.submission.PropertyDoc;
 
@@ -14,16 +14,17 @@ public class Loan {
 	private float principalAmount;
 	private float interestRate;
 	private boolean credValStatus;
+	private boolean finDocValStatus;
 	private List<FinancialDoc> financialDocs;
 	private List<PropertyDoc> propertyDocs;
 	private Customer curCust;
-	private ApprovalRequest approvalRequest;
+	private PropertyApprovalRequest propertyApprovalRequest;
 	private LoanTermSheet loanTermSheet;
 	
 	
-	public Loan(long dateTime, float amount, boolean credValStatus) {
+	public Loan(float amount) {
 
-
+		dateTime = System.currentTimeMillis();
 		loanId = Util.getInstance().newId();
 		this.dateTime = dateTime;
 		this.principalAmount = amount;
@@ -72,6 +73,30 @@ public class Loan {
 
 	public void setCredValStatus(boolean credValStatus) {
 		this.credValStatus = credValStatus;
+	}
+
+	public PropertyApprovalRequest getPropertyApprovalRequest() {
+		return propertyApprovalRequest;
+	}
+
+	public void setPropertyApprovalRequest(PropertyApprovalRequest propertyApprovalRequest) {
+		this.propertyApprovalRequest = propertyApprovalRequest;
+	}
+
+	public List<FinancialDoc> getFinancialDocs() {
+		return financialDocs;
+	}
+
+	public void setFinancialDocs(List<FinancialDoc> financialDocs) {
+		this.financialDocs = financialDocs;
+	}
+
+	public boolean isFinDocValStatus() {
+		return finDocValStatus;
+	}
+
+	public void setFinDocValStatus(boolean finDocValStatus) {
+		this.finDocValStatus = finDocValStatus;
 	}
 	
 	

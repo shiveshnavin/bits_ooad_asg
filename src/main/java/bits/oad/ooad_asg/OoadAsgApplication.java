@@ -7,7 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OoadAsgApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OoadAsgApplication.class, args);
+	 	SpringApplication.run(OoadAsgApplication.class, args);
+		
+		 
+		
 	}
 
 }

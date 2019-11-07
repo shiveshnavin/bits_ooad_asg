@@ -4,10 +4,10 @@ import bits.oad.ooad_asg.Util;
 
 public class ExternalPropertyApprovalSystem {
 	
-	public void approveRequest(ApprovalRequest ar)
+	public void approveRequest(PropertyApprovalRequest ar)
 	{
 		System.out.println("ExternalPropertyApprovalSystem : Approved Property");
-		ar.status=true;
+		ar.setStatus(true);
 	}
 
 	private static ExternalPropertyApprovalSystem EPASys;
