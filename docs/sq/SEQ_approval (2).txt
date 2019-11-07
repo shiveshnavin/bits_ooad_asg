@@ -1,0 +1,19 @@
+title Approval
+
+activate System
+System->ExCAA:ext_credit_approval_request()
+System<--ExCAA:credi_val_status=result
+deactivate System
+activate Officer
+Officer->Approval Request:check_apprt_approv_status(apptId)
+Officer->Financial Doccuments:check_fin_doc_validation(DocId)
+Officer->System:check_credi_val_status(loanid)
+Officer-->Loan:Approve_Loan(loanId)
+deactivate Officer
+activate System
+activate Customer
+Loan->Customer:Generate Loan Termsheet
+Loan<--Customer:acceptTermSheet()
+deactivate Customer
+System<-Clerk:File Original Property Docs
+deactivate System

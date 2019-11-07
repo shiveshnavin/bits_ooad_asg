@@ -1,0 +1,14 @@
+title Approval
+
+System->ExCAA:Request Credit Validation
+System<--ExCAA:Vallidation Status
+Officer<-System:Request Loan Approval
+Officer->System:Check Appartment Approval Status 
+Officer->System:Check Financial Doc Verification Status 
+Officer->System:Check ExCAA Credit Validation Status 
+Officer-->System:Approve Loan
+System->Customer:Generate Loan Termsheet
+System<--Customer:Accept Loan Termsheet
+System<-Clerk:File Original Property Docs
+Salesman->Accounting:Request Loan disbursment
+Accounting-->Customer:Disburse loan

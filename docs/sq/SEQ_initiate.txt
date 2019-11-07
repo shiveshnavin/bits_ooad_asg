@@ -1,0 +1,8 @@
+title Initiate Loan
+
+Customer->System:Initiate_Loan()
+Customer<-System:request_prop_docs()
+Customer-->System:upload_prop_docs()
+Customer<-System:request_fin_docs()
+Customer-->System:upload_fin_docs()
+Customer<--System:show_details()

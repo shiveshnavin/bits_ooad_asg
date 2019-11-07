@@ -1,0 +1,8 @@
+title Initiate Loan
+
+Customer->System:Initiates Loan Process
+Customer<--System:Asks for Required Docs
+Customer->System:Submits required Docs
+note over System,Customer:**Records** are stored
+Customer<--System:Salesperson is assigned
+Customer<--System:Details of initiating loan

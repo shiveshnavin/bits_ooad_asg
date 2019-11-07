@@ -1,0 +1,11 @@
+title Verification
+
+Customer->System:Provides Property Docs
+System->Prop. Appr. System:Check if apartment is pre-approved
+System<--Prop. Appr. System:Pre-Approval Status
+System->Prop. Appr. System:Create approval request if not approved
+System<--Prop. Appr. System:Approve Appartment
+Customer<-System:Request Financial Docs
+Customer-->System:Provides Financial Docs
+Clerk<-System:Assign Financial Docs Verification
+Clerk-->System:Verifies Financial Docs 
