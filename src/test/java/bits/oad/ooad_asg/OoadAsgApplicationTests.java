@@ -30,7 +30,7 @@ class OoadAsgApplicationTests {
 	void approvalTestNegetive()
 	{
 
-		HousingLoanSystem h=new HousingLoanSystem();
+		HousingLoanSystemExpert h=new HousingLoanSystemExpert();
 		h.curLoan=new Loan(1000);
 		h.curLoan.setPropertyApprovalRequest(new PropertyApprovalRequest());
 		h.createExternalCreditApprovalRequest();
@@ -46,7 +46,7 @@ class OoadAsgApplicationTests {
 	void approvalTestPositive()
 	{
 
-		HousingLoanSystem h=new HousingLoanSystem();
+		HousingLoanSystemExpert h=new HousingLoanSystemExpert();
 		h.curLoan=new Loan(1000);
 		h.curLoan.setPropertyApprovalRequest(new PropertyApprovalRequest());
 		h.createExternalCreditApprovalRequest();		

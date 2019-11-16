@@ -11,24 +11,4 @@ public class Customer {
 	String name;
 	List<Appartment> appartments;
 	
-	public void initiateLoan(int amount)
-	{
-		// Entry Point Here
-	}
-	
-	public void uploadFinancialDoc(FinancialDoc doc)
-	{
-		
-	}
-
-	public void uploadPropertyDoc(PropertyDoc doc)
-	{
-		
-	}
-
-	public void acceptTermSheet(LoanTermSheet sheet)
-	{
-		sheet.markAccepted();
-	}
-
 }

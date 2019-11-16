@@ -2,7 +2,7 @@ package bits.oad.ooad_asg.administration;
 
 import java.util.List;
 
-import bits.oad.ooad_asg.HousingLoanSystem;
+import bits.oad.ooad_asg.HousingLoanSystemExpert;
 import bits.oad.ooad_asg.finance.FinancialDoc;
 import bits.oad.ooad_asg.submission.PropertyDoc;
 
@@ -18,9 +18,9 @@ public class Clerk {
 		docs.stream().forEach(finDoc->{
 			
 		
-			HousingLoanSystem.curLoan.setFinDocValStatus(
+			HousingLoanSystemExpert.curLoan.setFinDocValStatus(
 
-					finDoc.isValid && HousingLoanSystem.curLoan.isFinDocValStatus()
+					finDoc.isValid && HousingLoanSystemExpert.curLoan.isFinDocValStatus()
 					
 					);
 			

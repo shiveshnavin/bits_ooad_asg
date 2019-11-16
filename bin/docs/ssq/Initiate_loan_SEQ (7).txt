@@ -1,0 +1,8 @@
+title Close Loan
+
+System->Customer:Request Balance Payment
+Customer-->System:Pays the balance
+System->Officer:Request Loan Closure
+System<--Officer:Approve Loan Closure
+Clerk->Customer:Return Original Docs
+Customer->System:Acknowledge Loan Closure

@@ -1,0 +1,16 @@
+title Validation
+
+Customer->System:upload_prop_docs()
+activate System
+activate Prop. Appr. System
+System->Prop. Appr. System:Check_Pre_approval()
+System->Prop. Appr. System:create_prop_approval_request()
+System<--Prop. Appr. System:Approve_request()
+deactivate Prop. Appr. System
+Customer<-System:get_fin_docs()
+Customer-->System:upload_fin_docs()
+activate Clerk
+Clerk-->System:status=verify_docs(docid)
+Customer<--System:status
+deactivate Clerk
+deactivate System

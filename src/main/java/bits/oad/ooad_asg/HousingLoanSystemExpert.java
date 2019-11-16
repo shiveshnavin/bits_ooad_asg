@@ -10,11 +10,11 @@ import bits.oad.ooad_asg.scrutiny.PropertyApprovalRequest;
 
 import java.util.List;
 
-public class HousingLoanSystem {
+public class HousingLoanSystemExpert {
 
 	public static Loan curLoan;
 	
-	HousingLoanSystem() {}
+	HousingLoanSystemExpert() {}
 	
 	public boolean doApproval()
 	{

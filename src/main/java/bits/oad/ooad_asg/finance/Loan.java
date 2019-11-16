@@ -98,6 +98,14 @@ public class Loan {
 	public void setFinDocValStatus(boolean finDocValStatus) {
 		this.finDocValStatus = finDocValStatus;
 	}
+
+	public List<PropertyDoc> getPropertyDocs() {
+		return propertyDocs;
+	}
+
+	public void setPropertyDocs(List<PropertyDoc> propertyDocs) {
+		this.propertyDocs = propertyDocs;
+	}
 	
 	
 	
