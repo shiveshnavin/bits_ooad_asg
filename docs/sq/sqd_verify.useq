@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="bits.oad.ooad_asg.HousingLoanSystem" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/HousingLoanSystem.java" binary="false" label="housingLoanSystem" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="118" y="0"/>    
+    <execution id="2">      
+      <position height="620" width="0" x="0" y="142"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="539" width="0" x="0" y="196"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="27" width="0" x="0" y="317"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="bits.oad.ooad_asg.finance.Loan" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/finance/Loan.java" binary="false" label="loanUnderProcess" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="27" width="0" x="0" y="236"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="27" width="0" x="0" y="681"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="bits.oad.ooad_asg.administration.AdminController" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/administration/AdminController.java" binary="false" label="ac" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="27" width="0" x="0" y="357"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="189" width="0" x="0" y="411"/>    
+    </execution>  
+  </object>  
+  <object id="23" language="java" name="bits.oad.ooad_asg.administration.Clerk" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/administration/Clerk.java" binary="false" label="clerk" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="18">      
+      <position height="27" width="0" x="0" y="438"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="bits.oad.ooad_asg.finance.Loan" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/finance/Loan.java" binary="false" label="curLoan" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="20">      
+      <position height="27" width="0" x="0" y="492"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="27" width="0" x="0" y="546"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doVerification():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="setPropertyApprovalRequestStatus(boolean):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="checkPreApproval():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="AdminController(bits.oad.ooad_asg.finance.Loan)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="clerkVerifyFinDocs():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="setFinDocValStatus(boolean):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="17" operation="verifyFinDoc(java.util.List&lt;bits.oad.ooad_asg.finance.FinancialDoc&gt;):boolean" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="getFinancialDocs():java.util.List&lt;FinancialDoc&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="getLoanId():int" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>
+</sequence-diagram>

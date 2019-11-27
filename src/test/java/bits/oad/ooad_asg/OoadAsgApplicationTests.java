@@ -8,6 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.event.annotation.BeforeTestClass;
 
 import bits.oad.ooad_asg.administration.Clerk;
 import bits.oad.ooad_asg.administration.Officer;
@@ -18,84 +19,88 @@ import bits.oad.ooad_asg.submission.Customer;
 import bits.oad.ooad_asg.submission.CustomerController;
 import bits.oad.ooad_asg.submission.PropertyDoc;
 
-@SpringBootTest
 class OoadAsgApplicationTests {
-	
-	
+
+	HousingLoanSystem sys = HousingLoanSystem.getInstance();
+	CustomerController cst = new CustomerController();
+
+	@BeforeTestClass
+	public void init() {
+
+		sys = HousingLoanSystem.getInstance();
+		cst = new CustomerController();
+	}
+
 	@BeforeEach
-    public void beforeEachTestMethod() {
-        System.out.println("<-------Enter-------------->");
-    }
+	public void afterEachTestMethod() {
 
-	@AfterEach
-    public void afterEachTestMethod() {
-        System.out.println("<--------Exit------------->");
-    }
- 
-	
-	// Will Not Approve
-	@Test
-	void approvalTestNegetive()
-	{
-
-		HousingLoanSystemExpert h=new HousingLoanSystemExpert();
-		h.curLoan=new Loan(1000);
-		h.curLoan.setPropertyApprovalRequest(new PropertyApprovalRequest());
-		h.createExternalCreditApprovalRequest();		
-		assertEquals(false, h.doApproval());
-		h.showDetails();
 		
-
-	}
-	
-
-	// Will Approve
-	@Test
-	void approvalTestPositive()
-	{
-
-		HousingLoanSystemExpert h=new HousingLoanSystemExpert();
-		//h.curLoan=new Loan(1000);
-		h.curLoan.setPropertyApprovalRequest(new PropertyApprovalRequest());
-		h.createExternalCreditApprovalRequest();		
-		h.curLoan.getPropertyApprovalRequest().setStatus(true);
-		h.curLoan.setFinDocValStatus(true);
-		
-		assertEquals(true, h.doApproval());
-	}
-	
-	@Test
-	void initiateLoan()
-	{
-		CustomerController c=new CustomerController();
-		c.initiateLoan(5000);
-		FinancialDoc fdoc =new FinancialDoc("doc data ");
-		c.uploadFinancialDoc(fdoc);
-		PropertyDoc doc =new PropertyDoc("doc data ");
-		c.uploadPropertyDoc(doc);
-		c.saveCustomer(new Customer(Util.getInstance().newId(),"Muskan"));
-		System.out.println(HousingLoanSystemExpert.curLoan.getLoanId());		
-		assertNotEquals(0, HousingLoanSystemExpert.curLoan.getLoanId());
-		
+		System.out.println("\n");
 		
 	}
+
 	@Test
-	void validateLoan()
-	{
-		Clerk clerk=new Clerk();
-		System.out.println("clerk has received request from customer");
-		Officer officer=new Officer();
-		//officer.checkCredValidity();
-//		c.initiateLoan(5000);
-//		FinancialDoc fdoc =new FinancialDoc("doc data ");
-//		c.uploadFinancialDoc(fdoc);
-//		PropertyDoc doc =new PropertyDoc("doc data ");
-//		c.uploadPropertyDoc(doc);
-//		c.saveCustomer(new Customer(Util.getInstance().newId(),"Muskan"));
-//		System.out.println(HousingLoanSystemExpert.curLoan.getLoanId());
-//		assertNotEquals(0, HousingLoanSystemExpert.curLoan.getLoanId());
-		
-		
+	public void bestCase() {
+		System.out.println("================Test Case : best Case================");
+		cst.initiateLoan(5000, "136 , Whitefield , Bangalore ", "Ext Credit Score 2500");
+
+		System.out.println(
+				"::::::::::: Use Case : Verification (Loan:" + sys.getLoanUnderProcess().getLoanId() + ") :::::::::::");
+		sys.doVerification();
+
+		System.out.println(
+				"::::::::::: Use Case : Approval (Loan:" + sys.getLoanUnderProcess().getLoanId() + "):::::::::::");
+		if (sys.doApproval())
+			cst.acceptTermSheet();
+
+	}
+
+	@Test
+	public void propertyIsRestricted() {
+		System.out.println("================Test Case : property Is Restricted================");
+		cst.initiateLoan(15000, "10 Janpath , New Delhi (restricted)", "Ext Credit Score 5500");
+
+		System.out.println(
+				"::::::::::: Use Case : Verification (Loan:" + sys.getLoanUnderProcess().getLoanId() + ") :::::::::::");
+		sys.doVerification();
+
+		System.out.println(
+				"::::::::::: Use Case : Approval (Loan:" + sys.getLoanUnderProcess().getLoanId() + "):::::::::::");
+		if (sys.doApproval())
+			cst.acceptTermSheet();
+
+	}
+
+	@Test
+	public void amountExceedsLimit() {
+		System.out.println("================Test Case : amount Exceeds Limit================");
+		cst.initiateLoan(9900000, "145 , Whitefield , Bangalore", "Ext Credit Score 5500");
+
+		System.out.println(
+				"::::::::::: Use Case : Verification (Loan:" + sys.getLoanUnderProcess().getLoanId() + ") :::::::::::");
+		sys.doVerification();
+
+		System.out.println(
+				"::::::::::: Use Case : Approval (Loan:" + sys.getLoanUnderProcess().getLoanId() + "):::::::::::");
+		if (sys.doApproval())
+			cst.acceptTermSheet();
+
+	}
+
+	@Test
+	public void invalidCredit() {
+		System.out.println("================Test Case : invalid Credit================");
+		cst.initiateLoan(9900000, "145 , Whitefield , Bangalore", "Ext Credit Score 5500 (invalid)");
+
+		System.out.println(
+				"::::::::::: Use Case : Verification (Loan:" + sys.getLoanUnderProcess().getLoanId() + ") :::::::::::");
+		sys.doVerification();
+
+		System.out.println(
+				"::::::::::: Use Case : Approval (Loan:" + sys.getLoanUnderProcess().getLoanId() + "):::::::::::");
+		if (sys.doApproval())
+			cst.acceptTermSheet();
+
 	}
 
 }

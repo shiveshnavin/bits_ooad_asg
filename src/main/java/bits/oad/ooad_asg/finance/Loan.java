@@ -3,6 +3,7 @@ package bits.oad.ooad_asg.finance;
 import java.util.List;
 
 import bits.oad.ooad_asg.Util;
+import bits.oad.ooad_asg.administration.SalesPerson;
 import bits.oad.ooad_asg.scrutiny.PropertyApprovalRequest;
 import bits.oad.ooad_asg.submission.Customer;
 import bits.oad.ooad_asg.submission.PropertyDoc;
@@ -18,8 +19,9 @@ public class Loan {
 	private List<FinancialDoc> financialDocs;
 	private List<PropertyDoc> propertyDocs;
 	public Customer curCust;
-	private PropertyApprovalRequest propertyApprovalRequest;
+	private boolean propertyApprovalRequestStatus;
 	private LoanTermSheet loanTermSheet;
+	private SalesPerson salesMan;
 	
 	
 	public Loan(float amount) {
@@ -29,6 +31,7 @@ public class Loan {
 		this.dateTime = dateTime;
 		this.principalAmount = amount;
 		this.credValStatus = credValStatus;
+		setSalesMan(new SalesPerson(Util.getInstance().newId(),"Juann Middleman"));
 		
 	}
 	
@@ -37,7 +40,11 @@ public class Loan {
 		loanTermSheet = new LoanTermSheet();
 		return loanTermSheet;
 	}
-	
+
+	public void initiateLoan() {
+		this.loanId = Util.getInstance().newId();
+		
+	}
 	
 	
 	
@@ -47,25 +54,12 @@ public class Loan {
 		return loanId;
 	}
 
-	public void setLoanId(int loanId) {
-		this.loanId = loanId;
-	}
 
-	public long getDateTime() {
-		return dateTime;
-	}
-
-	public void setDateTime(long dateTime) {
-		this.dateTime = dateTime;
-	}
 
 	public float getAmount() {
 		return principalAmount;
 	}
 
-	public void setAmount(float amount) {
-		this.principalAmount = amount;
-	}
 
 	public boolean isCredValStatus() {
 		return credValStatus;
@@ -75,12 +69,12 @@ public class Loan {
 		this.credValStatus = credValStatus;
 	}
 
-	public PropertyApprovalRequest getPropertyApprovalRequest() {
-		return propertyApprovalRequest;
+	public boolean getPropertyApprovalRequestStatus() {
+		return propertyApprovalRequestStatus;
 	}
 
-	public void setPropertyApprovalRequest(PropertyApprovalRequest propertyApprovalRequest) {
-		this.propertyApprovalRequest = propertyApprovalRequest;
+	public void setPropertyApprovalRequestStatus(boolean propertyApprovalRequestStatus) {
+		this.propertyApprovalRequestStatus = propertyApprovalRequestStatus;
 	}
 
 	public List<FinancialDoc> getFinancialDocs() {
@@ -105,6 +99,16 @@ public class Loan {
 
 	public void setPropertyDocs(List<PropertyDoc> propertyDocs) {
 		this.propertyDocs = propertyDocs;
+	}
+
+	public boolean getFinDocValStatus() {
+	 
+		return finDocValStatus;
+	}
+
+
+	public void setSalesMan(SalesPerson salesMan) {
+		this.salesMan = salesMan;
 	}
 	
 	

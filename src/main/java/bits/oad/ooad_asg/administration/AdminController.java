@@ -3,20 +3,29 @@ package bits.oad.ooad_asg.administration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import bits.oad.ooad_asg.HousingLoanSystemExpert;
+import bits.oad.ooad_asg.HousingLoanSystem;
+import bits.oad.ooad_asg.finance.Loan;
 import bits.oad.ooad_asg.scrutiny.LoanNotApprovedException;
 
 @Controller
 public class AdminController {
 	
-	
+
 	Officer officer;
-	Clerk clerk;
+	Clerk clerk; 
+	Loan curLoan;
+	public AdminController(Loan curLoan)
+	{
+		this.curLoan=curLoan;
+		officer = new Officer(curLoan);
+		clerk = new Clerk();
+	}
 	
 	@RequestMapping(path = "/api/officer/checkloan")
-	public void officerCheckLoan() throws LoanNotApprovedException
+	public boolean officerCheckLoan() throws LoanNotApprovedException
 	{
-		officer.checkLoan();
+
+		return officer.checkLoan();
 	}
 	
 	@RequestMapping(path = "/api/officer/approveloan")
@@ -27,16 +36,20 @@ public class AdminController {
 	
 	
 	@RequestMapping(path = "/api/clerk/verifydocs")
-	public void clerkVerifyDocs()
-	{
-		clerk.verifyDoc(HousingLoanSystemExpert.curLoan.getFinancialDocs());
+	public boolean clerkVerifyFinDocs()
+	{ 
+		boolean isValid = clerk.verifyFinDoc(curLoan.getFinancialDocs());
+	 
+		System.out.println("Fin Docs are : "+(isValid?"Valid":"Invalid")+ " for loan "+curLoan.getLoanId());
+		return isValid;
+	
 	}
 	
 
 	@RequestMapping(path = "/api/clerk/filepropertydocs")
 	public void clerkFIlePropertyDocs()
-	{
-		clerk.filePropertyDocs(HousingLoanSystemExpert.curLoan.getPropertyDocs());
+	{ 
+		clerk.filePropertyDocs();
 	}
 	
 	

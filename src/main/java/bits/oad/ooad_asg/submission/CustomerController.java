@@ -1,11 +1,12 @@
 package bits.oad.ooad_asg.submission;
+ 
 
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
 
 import antlr.collections.List;
-import bits.oad.ooad_asg.HousingLoanSystemExpert;
+import bits.oad.ooad_asg.HousingLoanSystem;
 import bits.oad.ooad_asg.Util;
 import bits.oad.ooad_asg.finance.FinancialDoc;
 import bits.oad.ooad_asg.finance.Loan;
@@ -15,25 +16,33 @@ import bits.oad.ooad_asg.finance.LoanTermSheet;
 public class CustomerController {
 	
 
-	public void initiateLoan(int amount)
+	HousingLoanSystem system = HousingLoanSystem.getInstance();
+	public void initiateLoan(int amount,String propDocData,String finDocData)
 	{
-		// Entry Point Here
-		HousingLoanSystemExpert.curLoan=new Loan(amount);
+		// Entry Point Here for Initate Use Case
+		system.createLoan(amount);
+		FinancialDoc fdoc =new FinancialDoc(finDocData);
+		uploadFinancialDoc(fdoc);
+		PropertyDoc doc =new PropertyDoc(propDocData);
+		uploadPropertyDoc(doc);
+		saveCustomer(new Customer("Muskan"));
+		system.showDetails();	
+		 
 		
 	}
 
 	public void saveCustomer(Customer curCust)
 	{
 		// Entry Point Here
-		HousingLoanSystemExpert.curLoan.curCust = curCust;
-		HousingLoanSystemExpert.curLoan.setLoanId( Util.getInstance().newId() );
+		system.getLoanUnderProcess().curCust = curCust;
+		system.getLoanUnderProcess().initiateLoan(  );
 		
 	}
 	
 	public void uploadFinancialDoc(FinancialDoc doc)
 	{
 		ArrayList<FinancialDoc>  lst =
-				(ArrayList<FinancialDoc>) HousingLoanSystemExpert.curLoan.getFinancialDocs();
+				(ArrayList<FinancialDoc>) system.getLoanUnderProcess().getFinancialDocs();
 		if(lst == null)
 		{
 			lst = new ArrayList<FinancialDoc>();
@@ -41,27 +50,30 @@ public class CustomerController {
 
 		lst.add(doc);
 		
-		HousingLoanSystemExpert.curLoan.setFinancialDocs(lst);
+		system.getLoanUnderProcess().setFinancialDocs(lst);
 		 
 	}
 
 	public void uploadPropertyDoc(PropertyDoc doc)
 	{
-		ArrayList<PropertyDoc>  lst1 =
-				(ArrayList<PropertyDoc>) HousingLoanSystemExpert.curLoan.getPropertyDocs();
-		if(lst1 == null)
+		ArrayList<PropertyDoc>  docList =
+				(ArrayList<PropertyDoc>) system.getLoanUnderProcess().getPropertyDocs();
+		if(docList == null)
 		{
-			lst1 = new ArrayList<PropertyDoc>();
+			docList = new ArrayList<PropertyDoc>();
 		}
 
-		lst1.add(doc);
+		docList.add(doc);
 		
-		HousingLoanSystemExpert.curLoan.setPropertyDocs(lst1);
+		system.getLoanUnderProcess().setPropertyDocs(docList);
 	}
 
-	public void acceptTermSheet(LoanTermSheet sheet)
+	public void acceptTermSheet()
 	{
+		LoanTermSheet sheet= system.getLoanUnderProcess().generateTermSheet();
 		sheet.markAccepted();
+		System.out.println(""+system.getLoanUnderProcess().curCust.getName()+" accepted loan termsheet ");
+		
 	}
 
 

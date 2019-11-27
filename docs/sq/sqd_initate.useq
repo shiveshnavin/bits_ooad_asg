@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="bits.oad.ooad_asg.submission.CustomerController" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/submission/CustomerController.java" binary="false" 
+    label="customerController" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="108" y="0"/>    
+    <execution id="2">      
+      <position height="767" width="0" x="0" y="151"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="686" width="0" x="0" y="205"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="27" width="0" x="0" y="380"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="27" width="0" x="0" y="501"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="202" width="0" x="0" y="568"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="bits.oad.ooad_asg.finance.Loan" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/finance/Loan.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="26">      
+      <position height="27" width="0" x="0" y="716"/>    
+    </execution>  
+  </object>  
+  <object id="28" language="java" name="bits.oad.ooad_asg.HousingLoanSystem" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/HousingLoanSystem.java" binary="false" label="system" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="27" width="0" x="0" y="245"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="27" width="0" x="0" y="837"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="27" width="0" x="0" y="608"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="27" width="0" x="0" y="662"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="bits.oad.ooad_asg.finance.FinancialDoc" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/finance/FinancialDoc.java" binary="false" label="fdoc" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="27" width="0" x="0" y="299"/>    
+    </execution>  
+  </object>  
+  <object id="30" language="java" name="bits.oad.ooad_asg.submission.PropertyDoc" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/submission/PropertyDoc.java" binary="false" label="doc" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="12">      
+      <position height="27" width="0" x="0" y="420"/>    
+    </execution>  
+  </object>  
+  <object id="31" language="java" name="bits.oad.ooad_asg.submission.Customer" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/submission/Customer.java" binary="false" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="18">      
+      <position height="27" width="0" x="0" y="783"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="initiateLoan(int,java.lang.String,java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="createLoan(int):bits.oad.ooad_asg.finance.Loan" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="FinancialDoc(java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="uploadFinancialDoc(bits.oad.ooad_asg.finance.FinancialDoc):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="PropertyDoc(java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="uploadPropertyDoc(bits.oad.ooad_asg.submission.PropertyDoc):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="saveCustomer(bits.oad.ooad_asg.submission.Customer):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="Customer(java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="showDetails():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="getLoanUnderProcess():bits.oad.ooad_asg.finance.Loan" asynchronous="false">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="getLoanUnderProcess():bits.oad.ooad_asg.finance.Loan" asynchronous="false">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="initiateLoan():void" asynchronous="false">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>
+</sequence-diagram>

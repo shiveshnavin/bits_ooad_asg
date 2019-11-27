@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="bits.oad.ooad_asg.HousingLoanSystem" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/HousingLoanSystem.java" binary="false" label="housingLoanSystem" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="794" width="0" x="0" y="122"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="713" width="0" x="0" y="176"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="27" width="0" x="0" y="297"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="bits.oad.ooad_asg.finance.Loan" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/finance/Loan.java" binary="false" label="loanUnderProcess" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="27" width="0" x="0" y="216"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="bits.oad.ooad_asg.administration.AdminController" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/administration/AdminController.java" binary="false" label="ac" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="27" width="0" x="0" y="337"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="363" width="0" x="0" y="391"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="81" width="0" x="0" y="781"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="bits.oad.ooad_asg.administration.Clerk" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/administration/Clerk.java" binary="false" label="clerk" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="20">      
+      <position height="27" width="0" x="0" y="808"/>    
+    </execution>  
+  </object>  
+  <object id="22" language="java" name="bits.oad.ooad_asg.administration.Officer" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/administration/Officer.java" binary="false" label="officer" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="18">      
+      <position height="309" width="0" x="0" y="418"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="27" width="0" x="0" y="472"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="27" width="0" x="0" y="539"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="27" width="0" x="0" y="606"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="27" width="0" x="0" y="673"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doApproval():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="setCredValStatus(boolean):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="createExternalCreditApprovalRequest():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="AdminController(bits.oad.ooad_asg.finance.Loan)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="officerCheckLoan():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="clerkFIlePropertyDocs():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="17" operation="checkLoan():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="filePropertyDocs():void" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="23" operation="checkPropertyApproval():void" asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="checkFinDocValidity():void" asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="checkCredValidity():void" asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="29" operation="approveLoan():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>
+</sequence-diagram>

@@ -7,6 +7,14 @@ public class FinancialDoc {
 	public FinancialDoc(String data) {
 		super();
 		this.data = data;
+		if(data.contains("invalid"))
+		{
+			isValid = false;
+		}
+		else
+		{
+			isValid = true;
+		}
 	}
 
 	private int docId=Util.getInstance().newId();
