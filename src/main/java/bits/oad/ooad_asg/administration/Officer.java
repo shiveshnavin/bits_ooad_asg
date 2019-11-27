@@ -18,7 +18,7 @@ public class Officer {
 	
 	public boolean approveLoan()
 	{
-		System.out.println("Officer : Tada ! approve Loan");
+		System.out.println("Officer : Tada !  Loan Approved");
 
 		return true;
 	}

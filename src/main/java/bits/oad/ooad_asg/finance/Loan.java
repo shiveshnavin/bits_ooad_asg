@@ -9,7 +9,7 @@ import bits.oad.ooad_asg.submission.PropertyDoc;
 
 public class Loan {
 	
-	private int loanId;
+	private int loanId=0;
 	private long dateTime;
 	private float principalAmount;
 	private float interestRate;
@@ -17,7 +17,7 @@ public class Loan {
 	private boolean finDocValStatus;
 	private List<FinancialDoc> financialDocs;
 	private List<PropertyDoc> propertyDocs;
-	private Customer curCust;
+	public Customer curCust;
 	private PropertyApprovalRequest propertyApprovalRequest;
 	private LoanTermSheet loanTermSheet;
 	
@@ -25,7 +25,7 @@ public class Loan {
 	public Loan(float amount) {
 
 		dateTime = System.currentTimeMillis();
-		loanId = Util.getInstance().newId();
+		loanId=0;
 		this.dateTime = dateTime;
 		this.principalAmount = amount;
 		this.credValStatus = credValStatus;

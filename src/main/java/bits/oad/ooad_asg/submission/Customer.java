@@ -10,5 +10,10 @@ public class Customer {
 	int id;
 	String name;
 	List<Appartment> appartments;
+	public Customer(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
 	
 }

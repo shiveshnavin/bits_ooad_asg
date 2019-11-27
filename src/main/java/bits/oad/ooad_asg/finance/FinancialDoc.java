@@ -1,8 +1,18 @@
 package bits.oad.ooad_asg.finance;
 
+import bits.oad.ooad_asg.Util;
+
 public class FinancialDoc {
 	
-	private int docId;
+	public FinancialDoc(String data) {
+		super();
+		this.data = data;
+	}
+
+	private int docId=Util.getInstance().newId();
+	private String data;
+	
+
 	public boolean isValid = false;
 	
 	
