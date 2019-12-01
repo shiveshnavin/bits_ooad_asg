@@ -2,23 +2,17 @@ package bits.oad.ooad_asg.submission;
 
 import bits.oad.ooad_asg.Util;
 
-public class PropertyDoc {
+public class PropertyDoc extends Doccument{
 	
 	public int getId() {
-		return id;
+		return docId;
 	}
-	public String getData() {
-		return data;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+ 
 	public PropertyDoc(String data) {
 		super();
-		id=Util.getInstance().newId();
+		docId=Util.getInstance().newId();
 		this.data = data;
 	}
-	int id;
-	String data;
+	 
 
 }

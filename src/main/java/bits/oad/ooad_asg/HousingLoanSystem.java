@@ -4,6 +4,7 @@ import bits.oad.ooad_asg.administration.AdminController;
 import bits.oad.ooad_asg.administration.Officer;
 import bits.oad.ooad_asg.finance.FinancialDoc;
 import bits.oad.ooad_asg.finance.Loan;
+import bits.oad.ooad_asg.scrutiny.ExPropSystemAdapter;
 import bits.oad.ooad_asg.scrutiny.ExternalCreditApprovalSystem;
 import bits.oad.ooad_asg.scrutiny.ExternalPropertyApprovalSystem;
 import bits.oad.ooad_asg.scrutiny.LoanNotApprovedException;
@@ -93,10 +94,12 @@ public class HousingLoanSystem {
 	public boolean checkPreApproval()
 	{
 		boolean isOk = true;
+		ExPropSystemAdapter sysAd=new ExPropSystemAdapter();
+		
 		for(PropertyDoc d:loanUnderProcess.getPropertyDocs())
 		{
 			boolean isApproved = 
-					ExternalPropertyApprovalSystem.getInstance().checkPropertyPreApproval(d.getData());
+					sysAd.checkPropertyPreApproval(d);
 			if(!isApproved)
 			{
 				isApproved = createPropertyApprovalRequest(d);
@@ -112,11 +115,10 @@ public class HousingLoanSystem {
 	
 	public boolean createPropertyApprovalRequest(PropertyDoc d)
 	{
-		PropertyApprovalRequest req=new PropertyApprovalRequest();
-		req.setPdoc(d);
-		ExternalPropertyApprovalSystem.getInstance().approvePropRequest(req);
 		
-		return req.getStatus();
+		ExPropSystemAdapter sysAd=new ExPropSystemAdapter();
+		return sysAd.makeApprovePropReq(d);
+		 
 	}
 	
 	public boolean createExternalCreditApprovalRequest()

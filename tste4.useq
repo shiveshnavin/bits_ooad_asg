@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="bits.oad.ooad_asg.HousingLoanSystem" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/HousingLoanSystem.java" binary="false" label="housingLoanSystem" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="502" width="0" x="0" y="144"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="421" width="0" x="0" y="198"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="27" width="0" x="0" y="319"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="bits.oad.ooad_asg.finance.Loan" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/finance/Loan.java" binary="false" label="loanUnderProcess" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="27" width="0" x="0" y="238"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="bits.oad.ooad_asg.administration.AdminController" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/administration/AdminController.java" binary="false" label="ac" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="27" width="0" x="0" y="359"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="27" width="0" x="0" y="413"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="27" width="0" x="0" y="467"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="bits.oad.ooad_asg.scrutiny.LoanNotApprovedException" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/scrutiny/LoanNotApprovedException.java" binary="false" 
+    label="loanNotApprovedException" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="16">      
+      <position height="27" width="0" x="0" y="565"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="20" interaction-operator="NEG">    
+    <interaction-operand id="21" constraint="LoanNotApprovedException e">      
+      <fragment refId="15"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="doApproval():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="setCredValStatus(boolean):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="createExternalCreditApprovalRequest():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="AdminController(bits.oad.ooad_asg.finance.Loan)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="officerCheckLoan():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="clerkFIlePropertyDocs():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="getMessage():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>
+</sequence-diagram>

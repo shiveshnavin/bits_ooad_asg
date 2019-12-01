@@ -16,14 +16,16 @@ import bits.oad.ooad_asg.finance.LoanTermSheet;
 public class CustomerController {
 	
 
+	DocumentFactory docf=new DocumentFactory();
 	HousingLoanSystem system = HousingLoanSystem.getInstance();
 	public void initiateLoan(int amount,String propDocData,String finDocData)
 	{
+
 		// Entry Point Here for Initate Use Case
 		system.createLoan(amount);
-		FinancialDoc fdoc =new FinancialDoc(finDocData);
+		FinancialDoc fdoc =docf.createFinDoc(finDocData);
 		uploadFinancialDoc(fdoc);
-		PropertyDoc doc =new PropertyDoc(propDocData);
+		PropertyDoc doc =docf.createPropDoc(propDocData);
 		uploadPropertyDoc(doc);
 		saveCustomer(new Customer("Muskan"));
 		system.showDetails();	
