@@ -39,16 +39,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="bits.oad.ooad_asg.finance.FinancialDoc" project="ooad_asg" 
-    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/finance/FinancialDoc.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="96" width="177" x="860" y="1155"/>    
-    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="6" language="java" name="bits.oad.ooad_asg.scrutiny.ExternalCreditApprovalSystem" project="ooad_asg" 
+  <class id="5" language="java" name="bits.oad.ooad_asg.scrutiny.ExternalCreditApprovalSystem" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/scrutiny/ExternalCreditApprovalSystem.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="116" width="332" x="296" y="37"/>    
@@ -58,7 +49,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="bits.oad.ooad_asg.scrutiny.ExternalPropertyApprovalSystem" project="ooad_asg" 
+  <class id="6" language="java" name="bits.oad.ooad_asg.scrutiny.ExternalPropertyApprovalSystem" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/scrutiny/ExternalPropertyApprovalSystem.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="156" width="446" x="41" y="253"/>    
@@ -68,7 +59,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="bits.oad.ooad_asg.scrutiny.PropertyApprovalRequest" project="ooad_asg" 
+  <class id="7" language="java" name="bits.oad.ooad_asg.scrutiny.PropertyApprovalRequest" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/scrutiny/PropertyApprovalRequest.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="236" width="252" x="330" y="579"/>    
@@ -78,7 +69,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="bits.oad.ooad_asg.submission.Appartment" project="ooad_asg" 
+  <class id="8" language="java" name="bits.oad.ooad_asg.submission.Appartment" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/submission/Appartment.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="116" width="201" x="1077" y="1351"/>    
     <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
@@ -87,7 +78,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="bits.oad.ooad_asg.submission.Customer" project="ooad_asg" 
+  <class id="9" language="java" name="bits.oad.ooad_asg.submission.Customer" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/submission/Customer.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="156" width="201" x="1077" y="1155"/>    
     <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
@@ -96,16 +87,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="bits.oad.ooad_asg.submission.PropertyDoc" project="ooad_asg" 
-    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/submission/PropertyDoc.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="96" width="201" x="619" y="1155"/>    
-    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="12" language="java" name="bits.oad.ooad_asg.finance.Loan" project="ooad_asg" 
+  <class id="10" language="java" name="bits.oad.ooad_asg.finance.Loan" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/finance/Loan.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="536" width="369" x="1147" y="579"/>    
     <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
@@ -114,7 +96,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="bits.oad.ooad_asg.submission.Doccument" project="ooad_asg" 
+  <class id="11" language="java" name="bits.oad.ooad_asg.submission.Doccument" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/submission/Doccument.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="156" width="201" x="739" y="579"/>    
     <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
@@ -123,7 +105,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="bits.oad.ooad_asg.finance.LoanTermSheet" project="ooad_asg" 
+  <class id="12" language="java" name="bits.oad.ooad_asg.finance.LoanTermSheet" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/finance/LoanTermSheet.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="156" width="215" x="1318" y="1155"/>    
     <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
@@ -132,7 +114,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="bits.oad.ooad_asg.HousingLoanSystem" project="ooad_asg" 
+  <class id="13" language="java" name="bits.oad.ooad_asg.HousingLoanSystem" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/HousingLoanSystem.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="276" width="407" x="1503" y="253"/>    
     <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
@@ -141,7 +123,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="16" language="java" name="bits.oad.ooad_asg.submission.CustomerController" project="ooad_asg" 
+  <class id="14" language="java" name="bits.oad.ooad_asg.submission.CustomerController" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/submission/CustomerController.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="176" width="300" x="1345" y="37"/>    
@@ -151,7 +133,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="bits.oad.ooad_asg.submission.DocumentFactory" project="ooad_asg" 
+  <class id="15" language="java" name="bits.oad.ooad_asg.submission.DocumentFactory" project="ooad_asg" 
     file="/ooad_asg/src/main/java/bits/oad/ooad_asg/submission/DocumentFactory.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="116" width="276" x="1187" y="253"/>    
@@ -161,214 +143,240 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="18">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="19">    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="20" name="system"/>      
-      <multiplicity id="21" minimum="0" maximum="1"/>    
+  <class id="16" language="java" name="bits.oad.ooad_asg.submission.PropertyDoc" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/submission/PropertyDoc.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="562" y="1190"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="bits.oad.ooad_asg.finance.FinancialDoc" project="ooad_asg" 
+    file="/ooad_asg/src/main/java/bits/oad/ooad_asg/finance/FinancialDoc.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="900" y="1196"/>    
+    <display autosize="true" stereotype="false" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="18">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="19" name="financialDocs"/>      
+      <multiplicity id="20" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
+    <end type="TARGET" refId="17" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="22">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="23">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="24" name="EPASys">        
-        <position height="0" width="0" x="0" y="0"/>      
+  <association id="21">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="22" name="loanUnderProcess">        
+        <position height="22" width="138" x="1543" y="574"/>      
       </attribute>      
-      <multiplicity id="25" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="26">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="27" name="propertyDocs">        
-        <position height="22" width="103" x="528" y="949"/>      
-      </attribute>      
-      <multiplicity id="28" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="29">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="30" name="system"/>      
-      <multiplicity id="31" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="32">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="33" name="financialDocs">        
-        <position height="22" width="103" x="775" y="1025"/>      
-      </attribute>      
-      <multiplicity id="34" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="35">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="36" name="curCust">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="37" minimum="0" maximum="1">        
+      <multiplicity id="23" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="38">    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="39" name="docf"/>      
-      <multiplicity id="40" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="41">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="42" name="loanTermSheet"/>      
-      <multiplicity id="43" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="44">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="45" name="pdoc">        
-        <position height="22" width="48" x="424" y="1024"/>      
+  <generalization id="24">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="25">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="26" name="system">        
+        <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="46" minimum="0" maximum="1">        
+      <multiplicity id="27" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
+    <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="47">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="48" name="ECASys">        
-        <position height="22" width="69" x="612" y="165"/>      
+  <association id="28">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="29" name="pdoc"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="32" name="loanToProcess">        
+        <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="49" minimum="0" maximum="1">        
+      <multiplicity id="33" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="50">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="51" name="loans">        
-        <position height="22" width="50" x="901" y="658"/>      
-      </attribute>      
-      <multiplicity id="52" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="53">    
-    <bendpoint x="1156" y="253"/>    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="54" name="curLoan">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="55" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="56">    
+  <association id="34">    
     <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="57" name="appartments">        
+      <attribute id="35" name="curCust">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="58" minimum="0" maximum="2147483647">        
+      <multiplicity id="36" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="59">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="60" name="clerk">        
+  <association id="37">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="38" name="loanTermSheet">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="61" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="62">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="63" name="loanToProcess">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="64" minimum="0" maximum="1">        
+      <multiplicity id="39" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="12" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="65">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="66" name="loanUnderProcess">        
-        <position height="22" width="138" x="1543" y="574"/>      
-      </attribute>      
-      <multiplicity id="67" minimum="0" maximum="1"/>    
+  <association id="40">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="41" name="propertyDocs"/>      
+      <multiplicity id="42" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
+    <end type="TARGET" refId="16" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="68">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="69" name="officer">        
+  <association id="43">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="44" name="salesMan">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="70" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="71">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="72" name="salesMan">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="73" minimum="0" maximum="1">        
+      <multiplicity id="45" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="46">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="47" name="approvals">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="48" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="49">    
+    <bendpoint x="1156" y="253"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="50" name="curLoan">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="51" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="52">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="53" name="docf">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="54" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="55">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="56" name="system">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="57" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="58">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="59">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="60" name="ECASys">        
+        <position height="22" width="69" x="612" y="165"/>      
+      </attribute>      
+      <multiplicity id="61" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="62">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="63" name="loans">        
+        <position height="22" width="50" x="901" y="658"/>      
+      </attribute>      
+      <multiplicity id="64" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="65">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="66" name="officer">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="67" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="68">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="69" name="clerk">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="70" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="71">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="72" name="EPASys">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="73" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="74">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="75" name="approvals">        
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="75" name="appartments">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="76" minimum="0" maximum="2147483647">        
