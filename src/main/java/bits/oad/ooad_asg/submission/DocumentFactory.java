@@ -4,11 +4,11 @@ import bits.oad.ooad_asg.finance.FinancialDoc;
 
 public class DocumentFactory {
 
-	public FinancialDoc createFinDoc(String data)
+	public Doccument createFinDoc(String data)
 	{
 		return new FinancialDoc(data);
 	}
-	public PropertyDoc createPropDoc(String data)
+	public Doccument createPropDoc(String data)
 	{
 		return new PropertyDoc(data);
 	}
